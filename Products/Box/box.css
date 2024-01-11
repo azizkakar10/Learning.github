@@ -1,0 +1,130 @@
+*{
+    font-family: serif;
+
+}
+body{
+    border: 5px solid black;
+    width: 1500px;
+    height: auto;
+    box-shadow: 10px 10px 10px black;
+    background-image: url(nature3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    background-color: rgba(96, 175, 240, 0.6);
+    width: 800px;
+    padding: 5px;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 100px;
+    text-shadow: 5px 2px 5px white ;
+    box-shadow: 10px 10px 10px black;
+}
+h1:hover{
+    background-color: rgb(87, 108, 248);
+    width: 1000px;
+    font-size: 120px;
+    color: white;
+    text-shadow: none;
+    box-shadow: none;
+    text-shadow: 5px 2px 5px black ;
+
+}
+h3{
+   text-align: center;
+   margin: 30px auto;
+   font-size: 45px;
+   text-shadow: 5px 3px 5px white;   
+}
+p{
+    text-align: justify;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    opacity: 1;
+    text-shadow: 5px 5px 5px black;
+}
+.btn{
+    all: unset;
+    display: block;
+    margin-left: auto;
+    border: 2px solid #FFF;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 30px;
+    font-weight: 600;
+    transition: all 0.5s;
+    cursor: pointer;
+    letter-spacing: 1.2px;
+    text-shadow: 3px 3px 3px white;
+
+}
+.btn:hover{
+    color:#02b875;
+    background: #FFF;
+}
+.main{
+    width: 1120px;
+    height: 500px;
+    margin: 20px auto;
+    background-color: transparent;
+}
+.box{
+    height: 400px;
+    width: 300px;
+    display: inline-block;
+    margin: 30px;
+    box-shadow: 10px 10px 10px black;
+}
+.box1{
+    border: 1px solid black;
+    background-image: url(nature1.webp);
+    opacity: 0.4;
+}
+.box2{
+    border: 1px solid black;
+    background-image: url(nature6.jpg);
+    opacity: 0.4;
+    }
+.box3{
+    border: 1px solid black;
+    background-image: url(nature2.avif);
+    opacity: 0.4;
+}
+.box1:hover{
+    border: 3px solid blue;
+    height: 430px;
+    width: 320px;
+    box-shadow: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+}
+.box2:hover{
+    border: 3px solid blue;
+    height: 430px;
+    width: 320px;
+    box-shadow: none;
+    opacity: 1;
+}
+.box3:hover{
+    border: 3px solid blue;
+    height: 430px;
+    width: 320px;
+    box-shadow: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+}
+a {
+    border: 1px solid blue; background-color: rgba(74, 184, 218,0.4);margin: 5px; padding: 1%;font-size: larger;color: blue;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 25px;
+    }
+    a:hover{
+        color:#02b875;
+    background: #FFF; 
+    }
