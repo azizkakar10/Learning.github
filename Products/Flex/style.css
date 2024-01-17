@@ -29,9 +29,10 @@ nav{
 i{
     margin: 10px;
 }
+
 .parent{
-    height: 1200px;
-    width: 1200px;
+    height: 1250px;
+    width: 1250px;
     border: 1px dotted chocolate;
     display: flex;
     justify-content:space-between ;
@@ -50,4 +51,15 @@ i{
 b{
     color: red;
     font-size: 20px;
+    cursor: pointer;
+}
+.box:hover{
+    height: 410px;
+    width: 410px;
+}
+
+b:hover{
+    font-size: 30px;
+    background-color: red;
+    color: white;
 }
