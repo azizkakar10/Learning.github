@@ -9,6 +9,7 @@ nav{
     border-bottom: 2px solid rgb(186, 179, 179);
     position: fixed;
     top: 0;
+    z-index: 1;
      
 }
 .nav-box{
