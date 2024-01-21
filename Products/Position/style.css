@@ -25,18 +25,17 @@ nav{
     flex-direction: row;
     align-items: center;
     height: 50px;
+    justify-content: space-around;
    
 }
 
 .frow-logo{
     font-size: 40px;
     color: orangered;
-    margin: 0px 20px; 
 }
 .frow-cat{
     border: 7px solid transparent; 
     cursor: pointer; 
-     margin: 0px 20px;
 }
 .frow-cat > i{
     color: rgb(91, 90, 90);
@@ -97,7 +96,6 @@ nav{
     font-weight: bold;
     color: rgb(91, 90, 90);
     border: 7px solid  transparent;
-     margin: 0px 20px;
     cursor: pointer; 
 }
 .frow-signin:hover{
