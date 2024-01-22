@@ -4,7 +4,7 @@
 }
 nav{
     height: 100px;
-     width: 98%;
+     width: 100%;
     background-color: white;
     border-bottom: 2px solid rgb(186, 179, 179);
     position: fixed;
@@ -25,17 +25,18 @@ nav{
     flex-direction: row;
     align-items: center;
     height: 50px;
-    justify-content: space-around;
    
 }
 
 .frow-logo{
     font-size: 40px;
     color: orangered;
+    margin: 0px 20px; 
 }
 .frow-cat{
     border: 7px solid transparent; 
     cursor: pointer; 
+     margin: 0px 20px;
 }
 .frow-cat > i{
     color: rgb(91, 90, 90);
@@ -65,7 +66,41 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+}
+@media (max-width:1300px){
+    .search-box{
+        width: 800px;
+    }
+}
+@media (max-width:1200px){
+    .search-box{
+        width: 700px;
+    }
+}
+@media (max-width:1100px){
+    .search-box{
+        width: 600px;
+    }
+}
+@media (max-width:1000px){
+    .search-box{
+        width: 500px;
+    }
+}
+@media (max-width:900px){
+    .search-box{
+        width: 400px;
+    }
+}
+@media (max-width:800px){
+    .search-box{
+        width: 300px;
+    }
+}
+@media (max-width:700px){
+    .search-box{
+        width: 200px;
+    }
 }
 .search-box > input{
     border: 0;
@@ -96,6 +131,7 @@ nav{
     font-weight: bold;
     color: rgb(91, 90, 90);
     border: 7px solid  transparent;
+     margin: 0px 20px;
     cursor: pointer; 
 }
 .frow-signin:hover{
@@ -153,16 +189,16 @@ h3{
     align-items: center;
     flex-wrap: wrap;
     cursor: pointer;
-
 }
+
 .child-img{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 0px 25px;
     flex-wrap: wrap;
-    
 }
+
 .child-img > img{
     height: 120px;
     width: 120px;
@@ -201,6 +237,17 @@ h3{
     margin-left: 5px;
     
 }
+@media (max-width:700px){
+    .dimg{
+        flex-direction: column;
+    }
+    .dchild-img{
+        flex-direction: row;
+        background-color: rgb(207, 200, 200); 
+    }
+
+}
+
 .dchild-img > img{
     height: 250px;
     width: 165px;
