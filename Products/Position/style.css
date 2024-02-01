@@ -163,6 +163,26 @@ nav{
     }
     
 }
+@media(max-width:800px){
+   .btmsearch-box{
+     width: 600px;
+   } 
+}
+@media(max-width:700px){
+   .btmsearch-box{
+     width: 500px;
+   } 
+}
+@media(max-width:600px){
+   .btmsearch-box{
+     width: 400px;
+   } 
+}
+@media(max-width:500px){
+   .btmsearch-box{
+     width: 300px;
+   } 
+}
 
 .search-box > input{
     border: 0;
