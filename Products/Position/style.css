@@ -26,14 +26,12 @@ nav{
 
 .frow-logo{
     font-size: 40px;
-    color: orangered;
-    margin:; 
+    color: orangered; 
     font-family: serif;
 }
 .frow-cat{
     border: 7px solid transparent; 
     cursor: pointer; 
-     margin: ;
 }
 .frow-cat > i{
     color: rgb(91, 90, 90);
@@ -173,16 +171,7 @@ nav{
      width: 500px;
    } 
 }
-@media(max-width:600px){
-   .btmsearch-box{
-     width: 400px;
-   } 
-}
-@media(max-width:500px){
-   .btmsearch-box{
-     width: 300px;
-   } 
-}
+
 
 .search-box > input{
     border: 0;
@@ -212,7 +201,6 @@ nav{
     font-weight: bold;
     color: rgb(91, 90, 90);
     border: 7px solid  transparent;
-     margin: ;
     cursor: pointer; 
 }
 .frow-signin:hover{
@@ -241,7 +229,6 @@ nav{
 }
 
 .second-row{
-    width: ;
     display: flex;
     justify-content:center;
     align-items:center ;
@@ -441,7 +428,6 @@ ol{
 }
 .ins-main-box{
     margin-top: 100px;
-    height: ;
     background-color: rgb(255, 255, 203);
     display: flex;
     flex-wrap: wrap;
@@ -452,7 +438,6 @@ ol{
     height: px;
 }
 .ins-text-prnt-box{
-    height:;
     display: flex;
    justify-content: center;
    display: flex;
@@ -469,7 +454,6 @@ ol{
 }
 
 .ins-help-box{
-    height: ;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;

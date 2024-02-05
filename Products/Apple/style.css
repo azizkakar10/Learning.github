@@ -1,21 +1,536 @@
 *{
 margin-left: 0px;
 margin-top: 0px;
+font-family: sans-serif;
 }
+
 nav{
-    background-color: rgba(0, 0, 0, 0.8);
-    height: 40px;
+    background-color: rgba(12, 12, 12, 0.7);
+    position: fixed;
+    width: 100%;
+    height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    z-index: 1;
 }
 .nav-parent{
-    color: rgb(210, 208, 208);
+    color: rgb(210, 205, 205);
     display: flex;
     justify-content:space-between;
-    padding: 10px;
+    align-items: center;
     width: 65%;
+    font-size: 12px;
+    font-weight: 600;
+}
+.bg-image{
+    width: 100%;
+     height: 650px;
+    background-image: url(apple.jpg);
+    background-size: cover;
+    background-position: 50%;
+    position: relative;
+}
+.icon-bg-image{
+position: absolute;
+left: 610px;
+bottom: 120px;
+font-size: 55px;
+font-weight: bold;
+font-family: sans-serif;
+color: rgb(38, 36, 36);
+}
+.heading-bg-image{
+    position: absolute;
+    left: 500px;
+    bottom: 55px;
+    font-size: 28px;
+   
+    color: rgb(38, 36, 36);
+}
+.bg-image-btn1{
+    position: absolute;
+    left: 650px;
+    bottom: 45px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #06c;
+}
+.bg-image-btn2{
+    position: absolute;
+    left: 810px;
+    bottom: 45px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #06c;
+}
+.bg-image-btn1:hover{
+    text-decoration: underline;
+} 
+.bg-image-btn2:hover{
+    text-decoration: underline;
+}
+.bg-image-iphone{
+    margin-top: 10px;
+    width: 100%;
+     height: 550px;
+    background-image: url(iphone15-2.jpg);
+    background-size: cover;
+    background-position: 60%;
+    position: relative;
+}
+.icon-bg-iphone{
+    position: absolute;
+    left: 610px;
+    top: 50px;
+    font-size: 55px;
+    font-weight: bold;
     font-family: sans-serif;
+    color:white;
+}
+.heading-bg-iphone{
+        position: absolute;
+        left: 580px;
+        top: 115px;
+        font-size: 28px;
+        color:white;
+}
+ .bg-iphone-btn1{
+        position: absolute;
+        left: 650px;
+        top: 170px;
+        font-size: 22px;
+        cursor: pointer;
+        color: #06c;
+}
+ .bg-iphone-btn2{
+        position: absolute;
+        left: 810px;
+       top: 170px;
+        font-size: 22px;
+        cursor: pointer;
+        color: #06c;
+}
+.bg-iphone-btn1:hover{
+        text-decoration: underline;
+} 
+.bg-iphone-btn2:hover{
+        text-decoration: underline;
+}
+.bg-image-iphone15{
+        margin-top: 10px;
+        width: 100%;
+         height: 550px;
+        background-image: url(iphone15.jpg);
+        background-size: cover;
+        background-position: 60%;
+        position: relative;
+}
+.icon-bg-iphone15{
+        position: absolute;
+        left: 660px;
+        top: 50px;
+        font-size: 55px;
+        font-weight: bold;
+        font-family: sans-serif;
+        color:black;
+}
+.heading-bg-iphone15{
+            position: absolute;
+            left: 580px;
+            top: 115px;
+            font-size: 28px;
+            color:black;
+}
+.bg-iphone15-btn1{
+            position: absolute;
+            left: 670px;
+            top: 170px;
+            font-size: 22px;
+            cursor: pointer;
+            color: #06c;
+}
+.bg-iphone15-btn2{
+            position: absolute;
+            left: 830px;
+           top: 170px;
+            font-size: 22px;
+            cursor: pointer;
+            color: #06c;
+}
+.bg-iphone15-btn1:hover{
+            text-decoration: underline;
+} 
+.bg-iphone15-btn2:hover{
+            text-decoration: underline;
+}
+.pic-section{
+height: 100%;
+width: 100%;
+margin: 15px;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+.pic1{
+    background-image: url(pic11.jpg);
+    height: 550px;
+    width: 48%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.pic1 > h1{
+    position: absolute;
+    left: 220px;
+    bottom: 85px;
+    font-size: 40px;
+    cursor: pointer;
+}
+.pic1 > p{
+    position: absolute;
+    left: 270px;
+    bottom: 60px;
+    font-size: 21px;
+    cursor: pointer;
+}
+.pic1 >a{
+    position: absolute;
+    left: 330px;
+    bottom: 40px;
+    font-size: 21px; 
+    cursor: pointer;
+    text-decoration: none;
+    color: #06c;
+}
+.pic1 > a:hover{
+    text-decoration: underline;
+}
+.pic2{
+    background-image: url(pic22.jpg);
+    width: 48%;
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: 10px;
+}
+.pic2 > img{
+    position: absolute;
+    top: 50px;
+    left: 300px;
+    cursor: pointer;
+}
+.pic2 > p{
+    position: absolute;
+    color: white;
+    top: 120px;
+    left: 260px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.pic2-link1{
+    position: absolute;
+    top: 160px;
+    left: 290px;
+    color: #06c;
+    text-decoration: none;
+    cursor: pointer;
+}
+.pic2-link1:hover{
+    text-decoration: underline;
+}
+.pic2-link2{
+    position: absolute;
+    top: 160px;
+    left: 410px;
+    color: #06c;
+    text-decoration: none;
+    cursor: pointer;
+}
+.pic2-link2:hover{
+    text-decoration: underline;
+}
+.pic3{
+    background-image: url(pic33.jpg);
+    height: 550px;
+    width: 48%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: 10px;
+}
+.pic3 > h1{
+    position: absolute;
+    top: 50px;
+    left: 250px;
+    font-size: 40px;
+    cursor: pointer;
+}
+.pic3 > p{
+    position: absolute;
+    top: 100px;
+    left: 230px;
+    font-size: 24px;
+    cursor: pointer;
+}
+.pic3-link1{
+    position: absolute;
+    top: 140px;
+    left: 290px;
+    color: #06c;
+    text-decoration: none;
+    cursor: pointer;
+}
+.pic3-link1:hover{
+    text-decoration: underline;
+}
+.pic3-link2{
+    position: absolute;
+    top: 140px;
+    left: 410px;
+    color: #06c;
+    text-decoration: none;
+    cursor: pointer;
+}
+.pic3-link2:hover{
+    text-decoration: underline;
+}
+.pic4{
+    background-image: url(pic44.jpg);
+    width: 48%;
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: 10px;
+}
+.pic4 > img{
+    position: absolute;
+    top: 60px;
+    left: 280px;
+    cursor: pointer;
+}
+.pic4 > p{
+    position: absolute;
+    color: white;
+    top: 100px;
+    left: 230px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.pic4-link1{
+    position: absolute;
+    top: 160px;
+    left: 250px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.pic4-link1:hover{
+    text-decoration: underline;
+}
+.pic4-link2{
+    position: absolute;
+    top: 155px;
+    left: 380px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.pic4-link2:hover{
+    text-decoration: underline;
+}
+.pic5{
+    background-image: url(pic55.jpg);
+    height: 550px;
+    width: 48%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: 10px;
+}
+.pic5 > img{
+    position: absolute;
+    top: 45px;
+    left: 330px;
+    cursor: pointer;
+}
+.pic5 > p{
+    position: absolute;
+    color: black;
+    top: 90px;
+    left: 250px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.pic5-link1{
+    position: absolute;
+    top: 150px;
+    left: 280px;
+    color: #06c;
+    text-decoration: none;
+    cursor: pointer;
+}
+.pic5-link1:hover{
+    text-decoration: underline;
+}
+.pic5-link2{
+    position: absolute;
+    top: 150px;
+    left: 400px;
+    color: #06c;
+    text-decoration: none;
+    cursor: pointer;
+}
+.pic5-link2:hover{
+    text-decoration: underline;
+}
+.pic6{
+    background-image: url(pic66.jpg);
+    width: 48%;
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin: 10px;
+}
+.pic6 > img{
+    position: absolute;
+    top: 50px;
+    left: 300px;
+    cursor: pointer;
+}
+.pic6 > p{
+    position: absolute;
+    top: 100px;
+    left: 260px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.pic6-link1{
+    position: absolute;
+    top: 160px;
+    left: 290px;
+    color: #06c;
+    text-decoration: none;
+    cursor: pointer;
+}
+.pic6-link1:hover{
+    text-decoration: underline;
+}
+.footer-parent{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center; 
+    flex-wrap: wrap;
+    background-color: rgb(239, 239, 230);  
+}
+.footer-p{
+    width: 70%;
+    margin: 15px;
+    border-bottom: 1px solid gray;
+}
+.footer-p > p{
+    color: gray;
     font-size: 13px;
+}
+.footer-p > p > a{
+    color: black;
+}
+.footer-a{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-a1{
+    width: 20%;
+}
+.footer-a2{
+    width: 20%;
+}
+.footer-a3{
+    width: 20%;
+}
+.footer-a4{
+    width: 20%;
+}
+.footer-a5{
+    width: 20%;
+}
+h3{
+    font-size: 15px;
+    color: rgb(74, 74, 74);
+}
+.footer-a1 >p{
+    font-size: 12px;
+    color: gray;
+    cursor: pointer;
+}
+.footer-a1 >p:hover{
+    text-decoration: underline;
+}
+.footer-a2 > p{
+    font-size: 12px;
+    color: gray;
+    cursor: pointer;
+}
+.footer-a2 >p:hover{
+    text-decoration: underline;
+}
+.footer-a3 > p{
+    font-size: 12px;
+    color: gray;
+    cursor: pointer;
+}
+.footer-a3 >p:hover{
+    text-decoration: underline;
+}
+.footer-a4 >p{
+    font-size: 12px;
+    color: gray;
+    cursor: pointer;
+}
+.footer-a4 >p:hover{
+    text-decoration: underline;
+}
+.footer-a5 >p{
+    font-size: 12px;
+    color: gray;
+    cursor: pointer;
+}
+.footer-a5 >p:hover{
+    text-decoration: underline;
+}
+.footer-last{
+    color: gray;
+    font-size: 12px;
+    margin: 20px 0px;
+    width: 70%;
+    border-bottom: 1px solid gray;
+}
+.footer-last >p{
+    text-align: left;
+}
+.footer-end{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer-end{
+    font-size: 12px;
+    color: gray;
+}
+.footer-end > span > a{
+    color: gray;
+    text-decoration: none;
+    cursor: pointer;
+}
+.footer-end > span > a:hover{
+    text-decoration: underline;
 }
