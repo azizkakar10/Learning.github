@@ -23,46 +23,55 @@ nav{
     font-size: 12px;
     font-weight: 600;
 }
+.nav-last{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    display: none;
+}
+.nav-last > div{
+   font-size: 20px;
+}
+@media (max-width:800px){
+    .nav-parent{width: 100%;}
+    .nav-parent > span{display: none;}
+    .nav-last{display: flex;}
+}
 .bg-image{
     width: 100%;
      height: 650px;
     background-image: url(apple.jpg);
     background-size: cover;
     background-position: 50%;
-    position: relative;
+    display: flex;
+    align-items: end;
+    justify-content: center;
 }
 .icon-bg-image{
-position: absolute;
-left: 610px;
-bottom: 120px;
-font-size: 55px;
-font-weight: bold;
-font-family: sans-serif;
-color: rgb(38, 36, 36);
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.heading-bg-image{
-    position: absolute;
-    left: 500px;
-    bottom: 55px;
+
+.icon-bg-image > p{
     font-size: 28px;
-   
-    color: rgb(38, 36, 36);
+    font-weight: lighter;
+    color: rgb(77, 76, 76);
+    margin-top: 10px;
 }
 .bg-image-btn1{
-    position: absolute;
-    left: 650px;
-    bottom: 45px;
     font-size: 20px;
     cursor: pointer;
     color: #06c;
 }
 .bg-image-btn2{
-    position: absolute;
-    left: 810px;
-    bottom: 45px;
     font-size: 20px;
     cursor: pointer;
     color: #06c;
+    margin-left: 20px;
 }
 .bg-image-btn1:hover{
     text-decoration: underline;
@@ -77,39 +86,36 @@ color: rgb(38, 36, 36);
     background-image: url(iphone15-2.jpg);
     background-size: cover;
     background-position: 60%;
-    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: center;
 }
 .icon-bg-iphone{
-    position: absolute;
-    left: 610px;
-    top: 50px;
-    font-size: 55px;
-    font-weight: bold;
-    font-family: sans-serif;
-    color:white;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    color: white;
+    margin-top: 30px;
 }
-.heading-bg-iphone{
-        position: absolute;
-        left: 580px;
-        top: 115px;
-        font-size: 28px;
-        color:white;
+.icon-bg-iphone > h2{
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+.icon-bg-iphone > p{
+    font-size: 28px;
 }
  .bg-iphone-btn1{
-        position: absolute;
-        left: 650px;
-        top: 170px;
         font-size: 22px;
         cursor: pointer;
         color: #06c;
 }
  .bg-iphone-btn2{
-        position: absolute;
-        left: 810px;
-       top: 170px;
         font-size: 22px;
         cursor: pointer;
         color: #06c;
+        margin-left: 20px;
 }
 .bg-iphone-btn1:hover{
         text-decoration: underline;
@@ -124,36 +130,32 @@ color: rgb(38, 36, 36);
         background-image: url(iphone15.jpg);
         background-size: cover;
         background-position: 60%;
-        position: relative;
+        display: flex;
+    align-items: start;
+    justify-content: center;
 }
 .icon-bg-iphone15{
-        position: absolute;
-        left: 660px;
-        top: 50px;
-        font-size: 55px;
-        font-weight: bold;
-        font-family: sans-serif;
-        color:black;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 30px;
+    color:black;
 }
-.heading-bg-iphone15{
-            position: absolute;
-            left: 580px;
-            top: 115px;
-            font-size: 28px;
-            color:black;
+.icon-bg-iphone15 > h2{
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+.icon-bg-iphone15 > p{
+    font-size: 28px;
 }
 .bg-iphone15-btn1{
-            position: absolute;
-            left: 670px;
-            top: 170px;
             font-size: 22px;
             cursor: pointer;
             color: #06c;
 }
 .bg-iphone15-btn2{
-            position: absolute;
-            left: 830px;
-           top: 170px;
             font-size: 22px;
             cursor: pointer;
             color: #06c;
@@ -181,32 +183,36 @@ flex-wrap: wrap;
     position: relative;
     margin: 10px;
     display: flex;
-    flex-wrap: wrap;
+    align-items: end;
+    justify-content: center;
 }
-.pic1 > h1{
-    position: absolute;
-    left: 220px;
-    bottom: 85px;
-    font-size: 40px;
+@media (max-width:800px){
+    .pic1{
+        width: 100%;
+    }
+}
+.pic1-info{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+.pic1-info > h1{
+    font-size: 38px;
     cursor: pointer;
 }
-.pic1 > p{
-    position: absolute;
-    left: 270px;
-    bottom: 60px;
+.pic1-info > p{
     font-size: 21px;
     cursor: pointer;
 }
-.pic1 >a{
-    position: absolute;
-    left: 330px;
-    bottom: 40px;
+.pic1-info >a{
     font-size: 21px; 
     cursor: pointer;
     text-decoration: none;
     color: #06c;
 }
-.pic1 > a:hover{
+.pic1-info > a:hover{
     text-decoration: underline;
 }
 .pic2{
@@ -215,27 +221,34 @@ flex-wrap: wrap;
     height: 550px;
     background-size: cover;
     background-position: center;
-    position: relative;
     margin: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
 }
-.pic2 > img{
-    position: absolute;
-    top: 50px;
-    left: 300px;
+@media (max-width:800px){
+    .pic2{
+        width: 100%;
+    }
+}
+.pic2-info{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin-top: 30px;
+}
+.pic2-info > img{
     cursor: pointer;
 }
-.pic2 > p{
-    position: absolute;
+.pic2-info > p{
     color: white;
-    top: 120px;
-    left: 260px;
     font-size: 20px;
     cursor: pointer;
+    margin-top: 10px;
 }
 .pic2-link1{
-    position: absolute;
-    top: 160px;
-    left: 290px;
     color: #06c;
     text-decoration: none;
     cursor: pointer;
@@ -244,12 +257,10 @@ flex-wrap: wrap;
     text-decoration: underline;
 }
 .pic2-link2{
-    position: absolute;
-    top: 160px;
-    left: 410px;
     color: #06c;
     text-decoration: none;
     cursor: pointer;
+    margin-left: 20px;
 }
 .pic2-link2:hover{
     text-decoration: underline;
@@ -260,27 +271,33 @@ flex-wrap: wrap;
     width: 48%;
     background-size: cover;
     background-position: center;
-    position: relative;
     margin: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
 }
-.pic3 > h1{
-    position: absolute;
-    top: 50px;
-    left: 250px;
+@media (max-width:800px){
+    .pic3{
+        width: 100%;
+    }
+}
+.pic3-info{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin-top: 30px;
+}
+.pic3-info > h1{
     font-size: 40px;
     cursor: pointer;
 }
-.pic3 > p{
-    position: absolute;
-    top: 100px;
-    left: 230px;
-    font-size: 24px;
+.pic3-info > p{
+    font-size: 20px;
     cursor: pointer;
 }
 .pic3-link1{
-    position: absolute;
-    top: 140px;
-    left: 290px;
     color: #06c;
     text-decoration: none;
     cursor: pointer;
@@ -289,12 +306,10 @@ flex-wrap: wrap;
     text-decoration: underline;
 }
 .pic3-link2{
-    position: absolute;
-    top: 140px;
-    left: 410px;
     color: #06c;
     text-decoration: none;
     cursor: pointer;
+    margin-left: 20px;
 }
 .pic3-link2:hover{
     text-decoration: underline;
@@ -305,27 +320,33 @@ flex-wrap: wrap;
     height: 550px;
     background-size: cover;
     background-position: center;
-    position: relative;
     margin: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
 }
-.pic4 > img{
-    position: absolute;
-    top: 60px;
-    left: 280px;
+@media (max-width:800px){
+    .pic4{
+        width: 100%;
+    }
+}
+.pic4-info{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin-top: 30px;
+}
+.pic4-info > img{
     cursor: pointer;
 }
-.pic4 > p{
-    position: absolute;
+.pic4-info > p{
     color: white;
-    top: 100px;
-    left: 230px;
     font-size: 20px;
     cursor: pointer;
 }
 .pic4-link1{
-    position: absolute;
-    top: 160px;
-    left: 250px;
     color: white;
     text-decoration: none;
     cursor: pointer;
@@ -334,12 +355,10 @@ flex-wrap: wrap;
     text-decoration: underline;
 }
 .pic4-link2{
-    position: absolute;
-    top: 155px;
-    left: 380px;
     color: white;
     text-decoration: none;
     cursor: pointer;
+    margin-left: 20px;
 }
 .pic4-link2:hover{
     text-decoration: underline;
@@ -350,27 +369,34 @@ flex-wrap: wrap;
     width: 48%;
     background-size: cover;
     background-position: center;
-    position: relative;
     margin: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
 }
-.pic5 > img{
-    position: absolute;
-    top: 45px;
-    left: 330px;
+@media (max-width:800px){
+    .pic5{
+        width: 100%;
+    }
+}
+.pic5-info{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin-top: 30px; 
+}
+.pic5-info > img{
     cursor: pointer;
 }
-.pic5 > p{
-    position: absolute;
+.pic5-info > p{
     color: black;
-    top: 90px;
-    left: 250px;
     font-size: 20px;
     cursor: pointer;
+    margin-top: 10px;
 }
 .pic5-link1{
-    position: absolute;
-    top: 150px;
-    left: 280px;
     color: #06c;
     text-decoration: none;
     cursor: pointer;
@@ -379,12 +405,10 @@ flex-wrap: wrap;
     text-decoration: underline;
 }
 .pic5-link2{
-    position: absolute;
-    top: 150px;
-    left: 400px;
     color: #06c;
     text-decoration: none;
     cursor: pointer;
+    margin-left: 20px;
 }
 .pic5-link2:hover{
     text-decoration: underline;
@@ -395,26 +419,33 @@ flex-wrap: wrap;
     height: 550px;
     background-size: cover;
     background-position: center;
-    position: relative;
     margin: 10px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
 }
-.pic6 > img{
-    position: absolute;
-    top: 50px;
-    left: 300px;
+@media (max-width:800px){
+    .pic6{
+        width: 100%;
+    }
+}
+.pic6-info{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin-top: 30px;
+}
+.pic6-info > img{
     cursor: pointer;
 }
-.pic6 > p{
-    position: absolute;
-    top: 100px;
-    left: 260px;
+.pic6-info > p{
     font-size: 20px;
     cursor: pointer;
+    margin-top: 10px;
 }
 .pic6-link1{
-    position: absolute;
-    top: 160px;
-    left: 290px;
     color: #06c;
     text-decoration: none;
     cursor: pointer;
@@ -435,6 +466,11 @@ flex-wrap: wrap;
     margin: 15px;
     border-bottom: 1px solid gray;
 }
+@media (max-width:800px){
+    .footer-p{
+        width: 100%;
+    }
+}
 .footer-p > p{
     color: gray;
     font-size: 13px;
@@ -446,6 +482,11 @@ flex-wrap: wrap;
     width: 70%;
     display: flex;
     flex-wrap: wrap;
+}
+@media (max-width:800px){
+    .footer-a{
+        width: 100%;
+    }
 }
 .footer-a1{
     width: 20%;
@@ -513,6 +554,11 @@ h3{
     width: 70%;
     border-bottom: 1px solid gray;
 }
+@media (max-width:800px){
+    .footer-last{
+        width: 100%;
+    }
+}
 .footer-last >p{
     text-align: left;
 }
@@ -521,6 +567,11 @@ h3{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+@media (max-width:800px){
+    .footer-end{
+        width: 100%;
+    }
 }
 .footer-end{
     font-size: 12px;
