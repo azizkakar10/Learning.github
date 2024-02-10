@@ -23,20 +23,30 @@ nav{
     font-size: 12px;
     font-weight: 600;
 }
-.nav-last{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: white;
-    display: none;
+.apple>i{
+    font-size: 18px;
 }
-.nav-last > div{
-   font-size: 20px;
+.nav-last{
+    color: rgb(210, 205, 205);
+    display: none;
+    width: 25%;
+    justify-content: space-between;
 }
 @media (max-width:800px){
-    .nav-parent{width: 100%;}
-    .nav-parent > span{display: none;}
-    .nav-last{display: flex;}
+    .nav-parent > .hidden{display: none;}
+    .nav-parent{width: 90% !important;}
+    .apple{
+        margin-left: 20px;
+    }
+    .apple>i{
+        font-size: 20px;
+    }
+    .nav-last{    
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    align-items: center;
+    }
 }
 .bg-image{
     width: 100%;
