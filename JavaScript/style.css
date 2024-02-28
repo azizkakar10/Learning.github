@@ -13,6 +13,8 @@ a{
     color: black;
     background-color: rgb(249, 150, 113);
     font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
 }
 .links{
     margin-top: 30px;
