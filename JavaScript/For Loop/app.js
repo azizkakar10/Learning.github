@@ -93,16 +93,50 @@
 // }
 
 
-var karachiAreas = ["malir" , "safoora" , "johar" , "landhi" , "korangi" , "banaras"]
-var userArea = prompt("Enter Your Area")
-var available = false
-for (i = 0 ; i < karachiAreas.length ; i++){
-    if (karachiAreas[i] == userArea) {
-        available = true
-        document.write("Delivery Available")
-        break;
-    }
-}
-if (!available){
-    document.write("Delivery Not Available")
-}
+// var karachiAreas = ["malir" , "safoora" , "johar" , "landhi" , "korangi" , "banaras"]
+// var userArea = prompt("Enter Your Area")
+// var available = false
+// for (i = 0 ; i < karachiAreas.length ; i++){
+//     if (karachiAreas[i] == userArea) {
+//         available = true
+//         document.write("Delivery Available")
+//         break;
+//     }
+// }
+// if (!available){
+//     document.write("Delivery Not Available")
+// }
+
+// var pattern = ""
+// var variable = 1
+// for ( i = 1 ; i <= 10 ; i++ ){
+//     for (num = 1 ; num <= 10 - i ; num++){
+//         pattern += num
+//     }
+//     pattern += "\n";
+// }
+// console.log(pattern);
+
+
+//  var string = "Saylani Welfare";
+//  console.log(string.length);
+//  console.log(string[2]);
+
+// var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+// console.log(arr.reverse());
+
+//split string ko array mein convert krne ke lye
+//join  array ko string mein convert krne ke lye
+
+
+var num = [1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9]
+console.log(num.reverse());
+
+//String ko reverse kerna k liye split or join use honge
+var nam = "Hello World"
+var namArr = nam.split("");
+console.log(namArr);
+var namRev = namArr.reverse();
+console.log(namRev);
+var namJoin = namRev.join("");
+console.log(namJoin);
