@@ -36,34 +36,81 @@ console.log(spaceText.length);
 console.log(spaceText.trim().length);
 
 //8. Count Vowels and Consonants
-console.log(sentence.indexOf("email"));
-console.log(sentence.lastIndexOf("email"));
+var sentences = "JavaScript is an excellent programming language"
+var vowels = ["a" , "e" , "i" , "o" , "u"]
+var vowelCount = 0;
+var consCount = 0;
+
+// for (var i = 0 ; i < sentences.length ; i++){
+//     if (sentences[i].toLowerCase() === "a" || sentences[i].toLowerCase() === "e" || sentences[i].toLowerCase() === "i" || sentences[i].toLowerCase() === "o" || sentences[i].toLowerCase() === "u"){
+//         vowelCount++;
+//     }else if (sentences[i] !== " "){
+//         consCount++;
+//     }
+// }
+// console.log(vowelCount);
+// console.log(consCount);
+
+// Count Vowels via Nested Loop-->
+for (let i = 0 ; i < sentences.length ; i++){
+    var alphaMatched = false;
+
+    for(var j = 0 ; j < vowels.length ; j++){
+    
+         if  (sentences[i].toLowerCase() === vowels[j]){
+            alphaMatched = true;
+            break;
+        }
+    }
+    if (alphaMatched)vowelCount++;
+if (!alphaMatched && sentence[i] !== " ") consCount++;
+}
+console.log("VowelCount-->" ,vowelCount);
+console.log("ConstCount-->" ,consCount);
+
+
+
 
 //9. Substring Extraction with Index
 console.log(text.substring(3));
 
 //10. Remove Dublucates
-var fruits = ["Apple" , "Banana" , "Chekku" , "Watermelon" , "Banana" , "Chekku"]
+// var fruits = ["Apple" , "Banana" , "Chekku" , "Watermelon" , "Banana" , "Chekku"]
 
-var cities = ["karachi" , "quetta" , "chamman" , "islamabad" , "peshawar"]
-var userCity = prompt("Enter Your City")
-for (var i = 0 ; i < cities.length ; i++){
-    console.log(cities[i]);
-    if (cities[i] === userCity.toLowerCase()){
-        alert("City Matched")
-    }
-}
+// var cities = ["karachi" , "quetta" , "chamman" , "islamabad" , "peshawar"]
+// var userCity = prompt("Enter Your City")
+// for (var i = 0 ; i < cities.length ; i++){
+//     console.log(cities[i]);
+//     if (cities[i] === userCity.toLowerCase()){
+//         alert("City Matched")
+//     }
+// }
 
-var UserName = prompt("Enter Your Name")
-if (UserName.length < 3 || UserName.length > 12){
-    alert("Your name must be Greater than 3 and less than 12")
-}else{
-    console.log(UserName);
-}
+// var UserName = prompt("Enter Your Name")
+// if (UserName.length < 3 || UserName.length > 12){
+//     alert("Your name must be Greater than 3 and less than 12")
+// }else{
+//     console.log(UserName);
+// }
 
 //Replace
 sentence = sentence.replace("email" , "LLL")
 console.log(sentence);
 
 //ChartAt
-console.log(sentence.charAt("!"));
+var numbOfE = 0;
+for  ( var i = 0 ; i < sentence.length ; i++){
+    if (sentence.charAt(i).toLowerCase() === "e" ) numbOfE++; 
+}
+console.log("Number Of E-->" , numbOfE);
+
+//Q..>Password must include one Capital Letter ,1 Number ,1 Speacial character , min length should be 8
+var capLetter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+var pasNumber = "123456789"
+var spCharacter = "@#!$%&-_+*"
+// var Password = prompt("Enter Password")
+// if (Password === capLetter[i] && Password === pasNumber[i] && Password === spCharacter[i] && Password.length > 8 || Password.length < 12){
+//     console.log(Password);
+// }else {
+//     alert ("Password must be 1 Capital Letter & 1 Number & 1 Special Character & more than 8 & less than 12")}
+

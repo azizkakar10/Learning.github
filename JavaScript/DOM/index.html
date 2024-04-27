@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1 id="heading">DOM (Document Object Model)</h1>
+    
+    <input type="text" id="userData" placeholder="User Name" value="">
+    <button onclick="submit()">Submit</button>
+
+
+    <h3>Box colour Change Practice</h3>
+    <div class="upper" id="upper"></div>
+
+    <div class="parent" id="parent">
+        <div onmouseover="yellow()" style="background-color: yellow;" class="child"></div>
+
+        <div onmouseover="black()" style="background-color: black;" class="child"></div>
+
+        <div onmouseover="red()" style="background-color: red;" class="child"></div>
+
+        <div onmouseover="green()" style="background-color: green;" class="child"></div>
+
+        <div onmouseover="orange()" style="background-color: orange;" class="child"> </div>
+
+        <div onmouseover="blue()" style="background-color: blue;" class="child"></div>
+    </div>
+
+    <h2 id="counterHed">User Text Counter</h2>
+    <textarea name="" id="userText" cols="30" rows="10"></textarea>
+<button onclick="count()">Submit</button>
+
+
+<h1>Replce Words</h1>
+<input type="text" id="userInput1">
+<input type="text" id="userInput2">
+<button onclick="replace()">Replace</button>
+<p id="para">Lorem ipsum is dolor sit amet is consectetur adipisicing is elit. Officiis consectetur is optio, tempora explicabo is aliquid, molestias similique is quaerat eum maiores is omnis enim laudantium is illum quas is perspiciatis delectus is deleniti veritatis is voluptatem laboriosam?</p>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
