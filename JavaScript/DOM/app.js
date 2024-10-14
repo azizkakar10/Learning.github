@@ -66,3 +66,46 @@ function replace(){
     result = result.replace(userInput1 , userInput2)
     para.innerText = result
 }
+
+// Object Adding, Deleting , Function
+var obj = {
+    name: "Aziz Ur Rehman",
+    fatherName: "Abdullah",
+    age:"01-03-1997",
+    class: "Web Development",
+    isMerried: true,
+    getAge: function(){
+        var now = new Date();
+        var dob = new Date(obj.date);
+        console.log(dob);
+        var age = now.getFullYear() - dob.getFullYear();
+        return age;
+    },
+    date: "01-03-1997,"
+}
+delete obj.age
+console.log(obj);
+console.log(obj.getAge());
+obj.batch = "Batch-11"
+
+//Constructor Object
+function AllStudent(nam, fnam, rno, btch){
+    this.name = nam;
+    this.fatherName = fnam;
+    this.rollNo = rno;
+    this.batchNo = btch;
+    this.isMarried = true
+}
+AllStudent.prototype.isStudent = true;
+
+var student1 = new AllStudent("Aziz Ur Rehman", "Abdullah", "210", "11")
+var student2 = new AllStudent("Bila", "Raza", "222", "12")
+var student3 = new AllStudent("Khalid", "Nisar", "320", "13")
+var student4 = new AllStudent("Zubair", "Bacha Agha", "410", "14")
+var student5 = new AllStudent("Muzammil", "Parid", "430", "15")
+
+console.log(student1);
+console.log(student2);
+console.log(student3);
+console.log(student4);
+console.log(student5);

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+    <style>
+        body{
+            background-color: rgb(172, 172, 244);
+        }
+        .heading{
+            font-size: 70px;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 10px black;
+        }
+     .btn{
+        height: 60px;
+        width: 100px;
+        font-size: 40px;
+        border-radius: 30px;
+        background-color: rgb(70, 70, 251);
+        color: white;
+        box-shadow: 0px 5px 10px black;
+     }
+     .num{
+        color: blue;
+        font-size: 70px;
+        margin-top: 0px;
+        text-shadow: 3px 3px 10px white;
+     }
+    </style>
+</head>
+<body>
+    <h1 class="heading">Counter App</h1>
+
+    <div style="display: flex; justify-content: center; margin-top: 50px; gap: 40px;">
+    
+        <button class="btn" id="incr_btn">+</button>
+        <h2 class="num" id="number">0</h2>
+        <button class="btn" id="decr_btn">-</button>
+
+    </div>
+    
+
+    <script src="counter.js"></script>
+</body>
+</html>
